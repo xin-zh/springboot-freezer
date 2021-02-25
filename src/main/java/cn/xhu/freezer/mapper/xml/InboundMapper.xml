@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xhu.freezer.dal.mapper.InboundMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.xhu.freezer.dal.entity.Inbound">
+    <result column="id" property="id" />
+        <result column="inbound_no" property="inboundNo" />
+        <result column="customer_name" property="customerName" />
+        <result column="customer_tel" property="customerTel" />
+        <result column="operator" property="operator" />
+        <result column="status" property="status" />
+        <result column="ext_info" property="extInfo" />
+        <result column="actual_pay" property="actualPay" />
+        <result column="should_pay" property="shouldPay" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        inbound_no, customer_name, customer_tel, operator, status, ext_info, actual_pay, should_pay, create_time, update_time
+    </sql>
+
+</mapper>

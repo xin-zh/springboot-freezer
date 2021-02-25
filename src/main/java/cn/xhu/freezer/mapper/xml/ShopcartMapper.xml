@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xhu.freezer.dal.mapper.ShopcartMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.xhu.freezer.dal.entity.Shopcart">
+    <result column="id" property="id" />
+        <result column="customer_name" property="customerName" />
+        <result column="product_no" property="productNo" />
+        <result column="product_name" property="productName" />
+        <result column="unit_price" property="unitPrice" />
+        <result column="cnt" property="cnt" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        customer_name, product_no, product_name, unit_price, cnt, create_time, update_time
+    </sql>
+
+</mapper>
