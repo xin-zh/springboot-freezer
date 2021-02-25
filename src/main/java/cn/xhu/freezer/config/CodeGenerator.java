@@ -50,6 +50,7 @@ public class CodeGenerator {
         pc.setParent("cn.xhu.freezer");
         pc.setEntity("dal.entity");
         pc.setMapper("dal.mapper" );
+        pc.setXml("dal.mapper.xml");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
         pc.setController("controller" );
